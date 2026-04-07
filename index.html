@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Stopwatch Web Application | Lap Timer</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <div class="container">
+        <!-- Header -->
+        <div class="app-header">
+            <i class="fas fa-stopwatch"></i>
+            <h1>Stopwatch</h1>
+            <p>Measure & Record Time Intervals Accurately</p>
+        </div>
+
+        <!-- Time Display -->
+        <div class="time-display" id="timeDisplay">
+            <span id="hours">00</span>
+            <span class="separator">:</span>
+            <span id="minutes">00</span>
+            <span class="separator">:</span>
+            <span id="seconds">00</span>
+            <span class="milliseconds" id="milliseconds">00</span>
+        </div>
+
+        <!-- Control Buttons for Start, Pause, Reset -->
+        <div class="controls">
+            <button class="btn btn-start" id="startBtn">
+                <i class="fas fa-play"></i>
+                <span>Start</span>
+            </button>
+            <button class="btn btn-pause" id="pauseBtn">
+                <i class="fas fa-pause"></i>
+                <span>Pause</span>
+            </button>
+            <button class="btn btn-reset" id="resetBtn">
+                <i class="fas fa-undo-alt"></i>
+                <span>Reset</span>
+            </button>
+            <button class="btn btn-lap" id="lapBtn">
+                <i class="fas fa-flag"></i>
+                <span>Lap</span>
+            </button>
+        </div>
+
+        <!-- Lap Times Section -->
+        <div class="lap-section">
+            <div class="lap-header">
+                <h3><i class="fas fa-list-ol"></i> Lap Times</h3>
+                <button class="clear-laps" id="clearLapsBtn">
+                    <i class="fas fa-trash-alt"></i> Clear All Laps
+                </button>
+            </div>
+            <div class="lap-list" id="lapList">
+                <div class="empty-laps">
+                    <i class="fas fa-hourglass-half"></i>
+                    <p>No laps recorded yet</p>
+                    <span>Press "Lap" button to record time intervals</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Statistics Footer -->
+        <div class="footer-info">
+            <div class="stats">
+                <div class="stat-item">
+                    <i class="fas fa-hourglass-start"></i>
+                    <span>Total Laps: <strong id="lapCount">0</strong></span>
+                </div>
+                <div class="stat-item">
+                    <i class="fas fa-clock"></i>
+                    <span>Status: <strong id="statusText">Stopped</strong></span>
+                </div>
+                <div class="stat-item">
+                    <i class="fas fa-chart-line"></i>
+                    <span>Best Lap: <strong id="bestLap">--</strong></span>
+                </div>
+            </div>
+            <p class="credit">✓ Start | Pause | Reset | Track Laps | Measure Time Intervals</p>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
