@@ -30,6 +30,3 @@ A simple, interactive stopwatch with start, pause, reset, and lap timing feature
 - CSS
 - JavaScript
 
-## Browser Support
-
-Works on all modern browsers (Chrome, Firefox, Safari, Edge)
