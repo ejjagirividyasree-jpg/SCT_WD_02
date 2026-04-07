@@ -18,15 +18,6 @@ A simple, interactive stopwatch with start, pause, reset, and lap timing feature
 4. Click **Reset** to clear everything
 5. Click **Clear All Laps** to remove lap history
 
-## Folder Structure
-stopwatch-app/
-├── index.html
-├── css/
-│ └── style.css
-├── js/
-│ └── script.js
-└── README.md
-
 ## How to Run
 
 1. Download all files
